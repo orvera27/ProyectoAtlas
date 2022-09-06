@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="gimnasio, yoga, musculación, natación, ejercicios, nutrición, funcional, pilates, suplementos, atlas gym">
+    <meta name="description" content="Somos Atlas Gym ofrecemos diversas actividades para mejorar tu estado físico, emocional y estético. Ofrecemos asesoría nutricional brindad por profesionales en el área. En nuestra tienda podes encontrar todo los necesario para realizar actividad física.">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  
+    <link rel="icon" href="./images/atlas.ico.png">
+    <!-- ESTILOS PERSONALIZADOS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/0f35f84c0b.js" crossorigin="anonymous"></script>
+    <title>Atlas Gym - Inicio</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <img class="header__logo" src="./images/atlas.ico.png" alt="logo de atlas">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar">
+            <i class="fa-solid fa-bars icon icon--menu"></i>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Gym Atlas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sedes.html">Sedes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="links-container nav">
+            <li class="links-container__item nav-item "><a class="nav-link active" href="./index.html">Inicio</a></li>
+            <li class="links-container__item"><a class="nav-link" href="./pages/sedes.html">Sedes</a></li>
+            <li class="links-container__item"><a class="nav-link" href="./pages/staff.html">Staff</a></li>
+            <li class="links-container__item"><a class="nav-link" href="./pages/tienda.html">Tienda</a></li>
+            <li class="links-container__item btn-contacto fw-semibold"><a href="./pages/contacto.html" class="text-white">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- main -->
+    <main class="contenido-inicio">
+        <section class="hero fondo-inicio">
+            <img class="hero__bg" src="./images/chica gym.jpg" alt="imagen de entrenamiento">
+            <div class="hero__text-box mensaje-inicio">
+                <h1>Atlas Gym <br> Llevamos el deporte a otro nivel</h1>
+                <p>Somos el mejor gimnasio especializado en varias disciplinas</p>
+            </div>
+        </section>
+
+        <!-- seccion disciplinas -->
+        <section class="seccion-disciplinas">
+            <h2>Nuestras Actividades:</h2>
+            <h3>Elegí tu clase!</h3>
+            <div class="contenedor-disciplinas">
+                <article class="disciplinas__card">
+                    <div class="card__img">
+                        <img src="./images/yoga.jpg" alt="imagen persona haciendo yoga">
+                    </div>
+                    <h4>Yoga</h4>
+                </article>
+                <article class="disciplinas__card">
+                    <div class="card__img">
+                        <img src="./images/pilates.jpg" alt="persona haciendo pilates">
+                    </div>
+                    <h4>Pilates</h4>
+                </article>
+                <article class="disciplinas__card">
+                    <div class="card__img">
+                        <img src="./images/musculacion.jpeg" alt="persona haciendo ejercicio de musculación">
+                    </div>
+                    <h4>Musculación</h4>
+                </article>
+                <article class="disciplinas__card">
+                    <div class="card__img">
+                        <img src="./images/natacion.jpeg" alt="imagen persona haciendo natación">
+                    </div>
+                    <h4>Natación</h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- seccion nutricionistas -->
+        <section class="nutriPrincipal">
+            <h2 class="nutriPrincipal__title">NUTRICIONISTAS</h2>
+            <div class="nutriPrincipal__img">
+                <img src="images/nutrie.jpg" alt="imagen de nutricionista">
+            </div>
+            <div class="nutriPrincipal__text-box">
+                <h3>ASESORIA EN NUTRICION</h3>
+                <p>
+                    Contamos con especialistas en Nutricion los cuales desarrollan planes de acuerdo a tus
+                    requerimientos
+                </p>
+            </div>
+        </section>
+    
+        <!-- tienda cards -->
+        <section class="store-container">
+            <h2>TIENDA</h2>
+            <div class="containerCardPrincipal">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="./pages/tienda.html">
+                        <img src="./images/zapas.jpg" alt="imagen de zapatillas">
+                    </a>
+                    <h3>Zapatillas Ipsum</h3>
+                    <p>Calzado liviano con excelente amortiguación, recomendado para running</p>
+                    <h4>$20.199,99</h4>
+                    <a href="#" class="btn-mas">Ver más</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="./pages/tienda.html">
+                        <img src="./images/top.jpg" alt="imagen de top deportivo">
+                    </a>
+                    <h3>Top deportivo</h3>
+                    <p>Top elastizado con tecnología dry-fit, ideal para deportistas profesionales</p>
+                    <h4>$8.199,99</h4>
+                    <a href="#" class="btn-mas">Ver más</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="./pages/tienda.html">
+                        <img class="imagen" src="./images/malla.jpg" alt="imagen de malla">
+                    </a>
+                    <h3>Malla deportiva</h3>
+                    <p>Malla cómoda, excelente para natación, disponible en varios colores</p>
+                    <h4>$12.199,99</h4>
+                    <a href="#" class="btn-mas">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- logo de whatsapp -->
+        <div class="whatsapp_logo">
+            <a target="_blank" href="https://www.whatsapp.com/?lang=es">
+                <img src="./images/WhatsAppimagen.webp" alt="logo de whatsapp">
+            </a>
+            <div class="whatsapp-logo__wave"></div>
+        </div>
+    </main>
+    <!-- footer  -->
+    <footer class="footer">
+        <ul class="footer__social-media">
+            <li class="social-media">
+                <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram icon icon--negative"></i>
+                </a>
+            </li>
+            <li class="social-media">
+                <a target="_blank" href="https://twitter.com/?lang=es">
+                    <i class="fa-brands fa-twitter icon icon--negative "></i>
+                </a>
+            </li>
+            <li class="social-media">
+                <a target="_blank" href="https://es-la.facebook.com/">
+                    <i class="fa-brands fa-facebook  icon icon--negative"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="footer__copyright">© Atlas Gym 2022. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
