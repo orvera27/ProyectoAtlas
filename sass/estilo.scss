@@ -254,10 +254,9 @@ body {
 .nutriPrincipal {
     width: 100%;
     min-height: 500px;
-  /*  background: url(../images/nutrie.jpg) center center no-repeat #423c3cb5;*/
     background: url(../images/nutrie.jpg) no-repeat center center #423c3cb5;
-  background-size: cover;
-  background-blend-mode: multiply;
+    background-size: cover;
+    background-blend-mode: multiply;
 
     background-size: cover;
     position: relative;
@@ -318,11 +317,9 @@ body {
     margin: 60px 0;
     .containerCardPrincipal {
         width: 100%;
-        max-width: 1900px;
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
+        justify-content:space-evenly;
         .cardPrincipal {
             padding-bottom: 1rem;
             width: 300px;
