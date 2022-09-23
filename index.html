@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   
-    <link rel="icon" href="./images/atlas.ico.png">
+    <link rel="icon" href="./images/logo.jpg">
     <!-- ESTILOS PERSONALIZADOS -->
     <link rel="stylesheet" href="css/estilo.css">
     <script src="https://kit.fontawesome.com/0f35f84c0b.js" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
 
     <!-- header -->
     <header class="header">
-        <img class="header__logo" src="./images/atlas.ico.png" alt="logo de atlas">
+        <img class="header__logo" src="./images/logo.jpg" alt="logo de atlas">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar">
@@ -71,7 +71,7 @@
     </header>
 
     <!-- main -->
-    <main class="contenido-inicio">
+    <main class="contenido-inicio bg-dark text-white">
         <section class="hero fondo-inicio">
             <img class="hero__bg" src="./images/chica gym.jpg" alt="imagen de entrenamiento">
             <div class="hero__text-box mensaje-inicio">
@@ -113,50 +113,54 @@
         </section>
 
         <!-- seccion nutricionistas -->
-        <section class="nutriPrincipal">
+        <section class="nutriPrincipal py-5 text-white d-block text-center">
             <h2 class="nutriPrincipal__title">NUTRICIONISTAS</h2>
-            <div class="nutriPrincipal__img">
-                <img src="images/nutrie.jpg" alt="imagen de nutricionista">
-            </div>
-            <div class="nutriPrincipal__text-box">
-                <h3>ASESORIA EN NUTRICION</h3>
+            <h3>ASESORIA EN NUTRICIÓN</h3>
                 <p>
                     Contamos con especialistas en Nutricion los cuales desarrollan planes de acuerdo a tus
                     requerimientos
                 </p>
-            </div>
+                <ul class="listado-planes">
+                    <li class="mb-3 mt-4"><i class="fa-solid fa-dumbbell me-2"></i> Planes de nutrición para perdida de grasa corporal</li>
+                    <li class="mb-3"><i class="fa-solid fa-dumbbell me-2"></i> Planes de nutrición focalizado en ganancia de masa muscular</li>
+                    <li class="mb-3"><i class="fa-solid fa-dumbbell me-2"></i> Consultanos por más planes que se adapten a tus necesidades</li>
+                </ul>
+
+                <a href="pages/contacto.html" class="btn-consulta">Realizar consulta</a>
+      
+
         </section>
     
         <!-- tienda cards -->
         <section class="store-container">
-            <h2>TIENDA</h2>
+            <h2>NUESTROS PRODUCTOS</h2>
             <div class="containerCardPrincipal">
                 <div class="cardPrincipal">
-                    <a target="_blank" href="./pages/tienda.html">
+                    <a target="_blank" href="./pages/tienda.html" target="_blank">
                         <img src="./images/zapas.jpg" alt="imagen de zapatillas">
                     </a>
-                    <h3>Zapatillas Ipsum</h3>
-                    <p>Calzado liviano con excelente amortiguación, recomendado para running</p>
+                    <h3>Zapatillas Deportivas</h3>
+                    <p>Calzado liviano con muy buena amortiguación, recomendado para running</p>
                     <h4>$20.199,99</h4>
-                    <a href="#" class="btn-mas">Ver más</a>
+                    <a href="./pages/tienda.html" class="btn-mas" target="_blank">Ver más</a>
                 </div>
                 <div class="cardPrincipal">
-                    <a target="_blank" href="./pages/tienda.html">
+                    <a target="_blank" href="./pages/tienda.html" target="_blank">
                         <img src="./images/top.jpg" alt="imagen de top deportivo">
                     </a>
                     <h3>Top deportivo</h3>
                     <p>Top elastizado con tecnología dry-fit, ideal para deportistas profesionales</p>
                     <h4>$8.199,99</h4>
-                    <a href="#" class="btn-mas">Ver más</a>
+                    <a href="./pages/tienda.html" class="btn-mas" target="_blank">Ver más</a>
                 </div>
                 <div class="cardPrincipal">
-                    <a target="_blank" href="./pages/tienda.html">
+                    <a target="_blank" href="./pages/tienda.html" target="_blank">
                         <img class="imagen" src="./images/malla.jpg" alt="imagen de malla">
                     </a>
                     <h3>Malla deportiva</h3>
                     <p>Malla cómoda, excelente para natación, disponible en varios colores</p>
                     <h4>$12.199,99</h4>
-                    <a href="#" class="btn-mas">Ver más</a>
+                    <a href="./pages/tienda.html" class="btn-mas" target="_blank">Ver más</a>
                 </div>
             </div>
         </section>

@@ -5,8 +5,11 @@
 
 $fondoPaginas: (
     inicio: "../images/chicagym.jpg",
-    sedes:"../images/gymx10.jpg",
-    staff:"../images/pesas.webp"
+    sedes:"../images/sedes.jpg",
+    staff:"../images/staff.jpg",
+    tienda:"../images/tienda.jpg",
+    galeria:"../images/galeria.jpg",
+    contacto:"../images/contacto.jpg"
 );
 
 .fondo-sedes{
@@ -20,12 +23,22 @@ $fondoPaginas: (
     background-size: cover;
 }
 .fondo-tienda{
-    background: url(map-get($fondoPaginas , inicio));
+    background: url(map-get($fondoPaginas , tienda));
+    background-position: center center;
+    background-size: cover;
+}
+.fondo-galeria{
+    background: url(map-get($fondoPaginas , galeria));
     background-position: center center;
     background-size: cover;
 }
 .fondo-staff{
     background: url(map-get($fondoPaginas , staff));
+    background-position: center center;
+    background-size: cover;
+}
+.fondo-contacto{
+    background: url(map-get($fondoPaginas , contacto));
     background-position: center center;
     background-size: cover;
 }
@@ -227,6 +240,11 @@ body {
                 text-align: center;
                 font-size: 1.1rem;
                 margin: 10px;
+                color: $colorSecundario;
+                background: #fff;
+                padding: 0.5rem;
+                font-weight: bold;
+                letter-spacing: 2px;
             }
         }
     }
@@ -235,6 +253,13 @@ body {
 /* SECCION NUTRICIONISTA */
 .nutriPrincipal {
     width: 100%;
+    min-height: 500px;
+  /*  background: url(../images/nutrie.jpg) center center no-repeat #423c3cb5;*/
+    background: url(../images/nutrie.jpg) no-repeat center center #423c3cb5;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+    background-size: cover;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -260,8 +285,30 @@ body {
         width: 100%;
         max-width: 738px;
     }
+    .listado-planes{
+        margin-bottom: 4rem;
+        i{
+            color: #fb4a14;
+        }
+    }
+    .btn-consulta{
+        background-color: #fb4a14;
+        color: #fff;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5px;
+        transition: all .5s ease;
+        &:hover{
+            opacity: .5;
+        }
+    }
 }
 
+
+/* PROFESORES */
+.profesores .card h4{
+    color: #fff;
+    background: #6d01b6;
+}
 
 /* SECCION PRODUCTOS */
 
@@ -335,7 +382,7 @@ body {
             text-align: center;
             font-family: 'Lato', sans-serif;
             font-weight: 800;
-            color: $colorTexto;
+            color: #fff;
             margin: 2px;
         }
         .card__img {
@@ -350,7 +397,13 @@ body {
     }
 }
 
-
+/* SECCION SEDES */
+.sucursales .card{
+    padding: 0;
+}
+.sucursales .card img{
+    height: 100%;
+}
 
 
 
@@ -511,6 +564,9 @@ body {
         .col-img{
             text-align: center;
         }
+    }
+    .header .nav-link{
+        color: #fff!important;
     }
 }
 

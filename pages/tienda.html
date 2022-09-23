@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="../images/atlas.ico.png">
+    <link rel="icon" href="../images/logo.jpg">
     <link rel="stylesheet" href="../css/estilo.css">
     <script src="https://kit.fontawesome.com/0f35f84c0b.js" crossorigin="anonymous"></script>
     <title>Atlas Gym - Tienda</title>
@@ -26,7 +26,7 @@
 <body>
      <!-- header -->
      <header class="header">
-        <img class="header__logo" src="../images/atlas.ico.png" alt="logo de atlas">
+        <img class="header__logo" src="../images/logo.jpg" alt="logo de atlas">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar">
@@ -71,10 +71,10 @@
     </header>
 
     <!-- main  -->
-    <main class="contenido-inicio">
+    <main class="contenido-inicio bg-dark">
         <section class="hero fondo-tienda">
             <img class="hero__bg" src="../images/pesas.webp" alt="imagen de entrenamiento">
-            <div class="hero__text-box">
+            <div class="hero__text-box mensaje-inicio">
                 <h1>Atlas GYM <br> Tienda online</h1>
                 <p>Somos el mejor gimnasio especializado en varias disciplinas</p>
             </div>
@@ -83,24 +83,36 @@
         <!-- section  -->
 
         <section class="container">
-            <h2 class="text-center m-3">CALZADO</h2>
-            <div class="row m-2">
+            <h2 class="text-center mt-3">Nuestros Productos</h2>
+            <div class="row mx-2">
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-12">
                     <div>
-                        <p>Cómodo, flexible, poca amortiguación y livianas. ¡Elige un modelo que te sirve para entrenar de manera completa en el gym y notarás la diferencia!</p>
+                        <p class="text-center text-white">A continuación podras conocer todos los productos que podemos ofrecerte para mejorar la calidad de tus entrenamientos!</p>
                     </div>
                 </div>
                     <div class="col-sm-12 col-md-6 col-lg-8 col-xl-12">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../images/zapp3.jpg" class="d-block w-100" alt="imagen de proteinas">
+                                <img src="../images/zapasnike.jpg" class="d-block w-100" alt="imagen de proteinas">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Indumentaria</h5>
+                                    <p>Especializada para cada actividad.</p>
+                                </div>
                             </div>
                             <div class="carousel-item $carousel-indicator-width:300px;">
-                                <img src="../images/zapp4.jfif" class="d-block w-100" alt="imagen de calzado">
+                                <img src="../images/suplemento.jpg" class="d-block w-100" alt="imagen de calzado">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Suplementos</h5>
+                                    <p>Acordes a tus necesidades.</p>
+                                </div>
                             </div>
                             <div class="carousel-item $carousel-indicator-width:300px;">
-                                <img src="../images/zapp5.jfif" class="d-block w-100" alt="imagen de reloj">
+                                <img src="../images/carousel3.jpg" class="d-block w-100" alt="imagen de reloj">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Accesorios</h5>
+                                    <p>Elementos para la disciplina que practiques.</p>
+                                </div>
                             </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -116,25 +128,109 @@
                 </div> 
             </div>
         </section>
-        <h2>NUESTRA TIENDA</h2>
-        <section class="tienda">
-            <article class="tienda__card">
-                <h4>SUPLEMENTOS</h4>
-                <div class="card__img">
-                    <img src="../images/suplementos.jpg" alt="imagen suplementos deportivos">
+
+       
+
+        <section class="tienda py-4 store-container container m-auto text-white">
+            <h2 class="text-start w-100 text-white">Indumentaria</h2>
+
+            <div class="containerCardPrincipal">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/zapas.jpg" alt="imagen de zapatillas">
+                    </a>
+                    <h3>Zapatillas</h3>
+                    <p>Calzado liviano con excelente amortiguación, recomendado para running</p>
+                    <h4>$20.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
                 </div>
-            </article>
-            <article class="tienda__card">
-                <div class="card__img">
-                    <h4>ACCESORIOS</h4>
-                    <img src="../images/accesorios.jpg" alt="imagen de accesorios">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/top.jpg" alt="imagen de top deportivo">
+                    </a>
+                    <h3>Top deportivo</h3>
+                    <p>Top elastizado con tecnología dry-fit, ideal para deportistas profesionales</p>
+                    <h4>$8.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
                 </div>
-            </article>
-            <article class="tienda__card">
-                <h4>INDUMENTARIA</h4>
-                <div class="card__img">
-                    <img src="../images/indumentaria.jpg" alt="imagen indumentaria">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img class="imagen" src="../images/malla.jpg" alt="imagen de malla">
+                    </a>
+                    <h3>Malla deportiva</h3>
+                    <p>Malla cómoda, excelente para natación, disponible en varios colores</p>
+                    <h4>$12.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
                 </div>
+            </div>
+        </section>
+
+        <section class="tienda py-4 store-container container m-auto text-white">
+            <h2 class="text-start w-100 text-white">Suplementos</h2>
+
+            <div class="containerCardPrincipal">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/vaso.jpg" alt="imagen de vaso">
+                    </a>
+                    <h3>Vaso para ingesta de suplementos</h3>
+                    <p>Vaso ideal para la mezcla e ingesta de todos tus suplementos</p>
+                    <h4>$3.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/creatina.webp" alt="imagen de suplemento">
+                    </a>
+                    <h3>Creatina</h3>
+                    <p>Creatina de alta calidad</p>
+                    <h4>$18.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img class="imagen" src="../images/proteina.jpg" alt="imagen de vaso">
+                    </a>
+                    <h3>Proteina</h3>
+                    <p>Proteina para uso diario y completar tus requerimientos</p>
+                    <h4>$5.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tienda py-4 store-container container m-auto text-white">
+            <h2 class="text-start w-100 text-white">Accesorios</h2>
+
+            <div class="containerCardPrincipal">
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/medias antidesliz.webp" alt="imagen de medias">
+                    </a>
+                    <h3>Medias antideslizantes</h3>
+                    <p>Medias especiales para realizar tus practicas de yoga, calistenia, y mucho más</p>
+                    <h4>$10.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img src="../images/calzas.webp" alt="imagen de calzas">
+                    </a>
+                    <h3>Calzas deportivas</h3>
+                    <p>Calzas deportivas aptas para realizar todo tipo de actividad fisica</p>
+                    <h4>$8.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+                <div class="cardPrincipal">
+                    <a target="_blank" href="#">
+                        <img class="imagen" src="../images/antiparras.jpg" alt="imagen de antiparrra">
+                    </a>
+                    <h3>Antiparras</h3>
+                    <p>Antiparras para natación</p>
+                    <h4>$6.199,99</h4>
+                    <a href="#" class="btn-mas">Comprar</a>
+                </div>
+            </div>
         </section>
 
         <!-- logo de whatsapp -->
